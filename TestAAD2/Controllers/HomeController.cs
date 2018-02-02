@@ -11,7 +11,7 @@ namespace TestAAD2.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
-
+            string s = "test";
             return View();
         }
     }
