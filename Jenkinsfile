@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Build') {
       steps {
-        echo 'getting latest'
+        echo 'Pulling latest'
+        git(url: 'https://github.com/RobertZhangCanada/TestAAD2.git', branch: 'master', poll: true, changelog: true)
       }
     }
   }
